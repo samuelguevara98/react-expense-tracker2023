@@ -1,8 +1,11 @@
 import React from "react";
 
 const Header = () => {
-  return <header>
-    <div id='Budget' className='bg-black p-4 flex justify-evenly items-center '>
+  return (
+    <header>
+      <div
+        id='Budget'
+        className='bg-black p-4 flex justify-evenly items-center '>
         <h1 className='text-white text-2xl font-semibold'>Dashboard</h1>
         <div>
           <button className='bg-white hover:bg-green-200 text-black font-bold py-2 px-4 rounded mx-4'>
@@ -13,7 +16,8 @@ const Header = () => {
           </button>
         </div>
       </div>
-  </header>;
+    </header>
+  );
 };
 
 export default Header;

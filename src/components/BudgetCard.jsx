@@ -3,16 +3,18 @@ import React from "react";
 
 export default function BudgetCard({ name, amount, max, gray }) {
   const progressBarColor = getProgressBarVariant(amount, max);
- 
-  const classNames = []
+
+  const classNames = [];
   if (amount > max) {
-    classNames.push("bg-red-300", )
+    classNames.push("bg-red-300");
   } else if (gray) {
-    classNames.push("bg-white")
+    classNames.push("bg-white");
   }
 
   return (
-    <div id="card" className={classNames.join(" ")}>
+    <div
+      id='card'
+      className={classNames.join(" ")}>
       <div
         id='title'
         className={`'block border border-gray-300 rounded-md shadow-md p-4 ${progressBarColor}'`}>
@@ -37,16 +39,16 @@ export default function BudgetCard({ name, amount, max, gray }) {
                 now={amount}></div>
             </div>
           </div>
-          <div className="">
+          <div className=''>
             <div
-            id=''
-            className='grid grid-cols-2 gap-4 m-2 '>
-            <button className='bg-white  shadow-md hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-lg m-2'>
-              Add Expense
-            </button>
-            <button className='bg-white  shadow-md hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-lg m-2'>
-              View Expense
-            </button>
+              id=''
+              className='grid grid-cols-2 gap-4 m-2 '>
+              <button className='bg-white  shadow-md hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-lg m-2'>
+                Add Expense
+              </button>
+              <button className='bg-white  shadow-md hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-lg m-2'>
+                View Expense
+              </button>
             </div>
           </div>
         </div>

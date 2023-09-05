@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-      
+
       <BudgetCard
         name='Food'
         amount={400}
